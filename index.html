@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superando o TDAH | Método Científico para Potencializar seu Cérebro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --primary-dark: #3730A3;
+            --secondary: #EC4899;
+            --accent: #06B6D4;
+            --dark: #111827;
+            --darker: #0F172A;
+            --light: #F8FAFC;
+            --gray: #E5E7EB;
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --shadow-primary: 0 10px 30px -5px rgba(79, 70, 229, 0.3);
+            --shadow-secondary: 0 10px 30px -5px rgba(236, 72, 153, 0.3);
+            --shadow-accent: 0 10px 30px -5px rgba(6, 182, 212, 0.3);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+        
+        /* Header Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 120px 0 100px;
+            position: relative;
+            overflow: hidden;
+            clip-path: ellipse(100% 100% at 50% 0%);
+        }
+        
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 70%);
+            animation: pulse 15s infinite alternate;
+            z-index: 1;
+        }
+        
+        .hero::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='%23F8FAFC' opacity='.25'/%3E%3Cpath d='M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z' fill='%23F8FAFC' opacity='.5'/%3E%3Cpath d='M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z' fill='%23F8FAFC'/%3E%3C/svg%3E");
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+        
+        @keyframes pulse {
+            0% { transform: rotate(0deg) scale(1); opacity: 0.8; }
+            50% { opacity: 0.4; }
+            100% { transform: rotate(360deg) scale(1.2); opacity: 0.8; }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            margin-bottom: 24px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            background: linear-gradient(90deg, white 0%, rgba(255,255,255,0.8) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        h1 {
+            font-size: 3.8rem;
+            font-weight: 900;
+            margin-bottom: 24px;
+            line-height: 1.15;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            background: linear-gradient(90deg, white 0%, rgba(255,255,255,0.9) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 48px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* CTA Button */
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, var(--secondary), var(--accent));
+            color: white;
+            padding: 22px 48px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: var(--transition);
+            box-shadow: var(--shadow-secondary);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(236, 72, 153, 0.5);
+        }
+        
+        .cta-button::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--accent), var(--secondary));
+            opacity: 0;
+            transition: var(--transition);
+            z-index: -1;
+        }
+        
+        .cta-button:hover::after {
+            opacity: 1;
+        }
+        
+        .cta-button span {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-button i {
+            margin-left: 10px;
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+        
+        .cta-button:hover i {
+            transform: translateX(5px);
+        }
+        
+        /* Floating Elements */
+        .floating-element {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(5px);
+            z-index: 2;
+        }
+        
+        .floating-1 {
+            width: 120px;
+            height: 120px;
+            top: 20%;
+            left: 10%;
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        .floating-2 {
+            width: 80px;
+            height: 80px;
+            bottom: 15%;
+            right: 12%;
+            animation: float 10s ease-in-out infinite 2s;
+        }
+        
+        .floating-3 {
+            width: 60px;
+            height: 60px;
+            top: 30%;
+            right: 15%;
+            animation: float 7s ease-in-out infinite 1s;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+            100% { transform: translateY(0) rotate(0deg); }
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 120px 0;
+            position: relative;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 80px;
+            color: var(--dark);
+            position: relative;
+            font-weight: 800;
+        }
+        
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 120px;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            margin: 24px auto 0;
+            border-radius: 3px;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 60px;
+            color: #4B5563;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 48px;
+            margin-top: 60px;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 16px;
+            padding: 48px 32px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.03);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .feature-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary), var(--accent));
+        }
+        
+        .feature-card::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.03) 0%, rgba(6, 182, 212, 0.03) 100%);
+            z-index: -1;
+        }
+        
+        .feature-icon {
+            font-size: 2.8rem;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: var(--dark);
+            font-weight: 700;
+        }
+        
+        .feature-card p {
+            color: #4B5563;
+            font-size: 1.05rem;
+        }
+        
+        /* Author Section */
+        .author-section {
+            padding: 120px 0;
+            position: relative;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%234F46E5' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        .author-container {
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 60px;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .author-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+        }
+        
+        .author-img-container {
+            position: relative;
+            min-width: 350px;
+        }
+        
+        .author-img {
+            width: 100%;
+            height: 400px;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 20px 20px 0px rgba(79, 70, 229, 0.1);
+            border: 8px solid white;
+            transform: rotate(-3deg);
+            transition: var(--transition);
+        }
+        
+        .author-img-container:hover .author-img {
+            transform: rotate(0deg);
+        }
+        
+        .author-badge {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: linear-gradient(45deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: var(--shadow-primary);
+            display: flex;
+            align-items: center;
+            z-index: 2;
+        }
+        
+        .author-badge i {
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+        
+        .author-content {
+            flex: 1;
+        }
+        
+        .author-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            margin-bottom: 24px;
+            color: var(--dark);
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        
+        .author-content p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #4B5563;
+        }
+        
+        .author-highlight {
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+            padding: 24px;
+            border-radius: 12px;
+            margin: 32px 0;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .author-highlight p {
+            font-style: italic;
+            color: var(--dark);
+            font-size: 1.15rem;
+            margin-bottom: 0;
+        }
+        
+        .author-signature {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--primary);
+            margin-top: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-signature::before {
+            content: "";
+            display: inline-block;
+            width: 40px;
+            height: 3px;
+            background: var(--primary);
+            margin-right: 16px;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 120px 0;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonials::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%234F46E5' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 80px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .testimonial-card {
+            background: var(--light);
+            border-radius: 16px;
+            padding: 48px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            border: 1px solid rgba(0,0,0,0.03);
+            transition: var(--transition);
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .testimonial-card::before {
+            content: """;
+            font-family: Georgia, serif;
+            font-size: 6rem;
+            color: rgba(79, 70, 229, 0.08);
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            line-height: 1;
+            z-index: 1;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 2;
+            font-size: 1.1rem;
+            color: #4B5563;
+        }
+        
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+        }
+        
+        .testimonial-author::before {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 2px;
+            background: var(--primary);
+            margin-right: 12px;
+        }
+        
+        .testimonial-rating {
+            color: #F59E0B;
+            margin-top: 8px;
+            font-size: 0.9rem;
+        }
+        
+        .testimonial-rating i {
+            margin-right: 2px;
+        }
+        
+        /* Pricing Section */
+        .pricing {
+            padding: 120px 0;
+            background: linear-gradient(135deg, #f9f9ff 0%, #eef2ff 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pricing::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%234F46E5' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        .pricing-card {
+            background: white;
+            border-radius: 20px;
+            padding: 80px;
+            display: inline-block;
+            max-width: 800px;
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            margin-top: 60px;
+            border: 1px solid rgba(0,0,0,0.05);
+            z-index: 2;
+        }
+        
+        .pricing-card::before {
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            z-index: -1;
+            opacity: 0.3;
+        }
+        
+        .pricing-card::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.03) 0%, rgba(6, 182, 212, 0.03) 100%);
+            border-radius: 20px;
+            z-index: -1;
+        }
+        
+        .pricing-header {
+            margin-bottom: 40px;
+        }
+        
+        .pricing-header h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        
+        .pricing-header p {
+            font-size: 1.1rem;
+            color: #4B5563;
+        }
+        
+        .price {
+            font-size: 4.5rem;
+            font-weight: 900;
+            color: var(--primary);
+            margin: 20px 0;
+            line-height: 1;
+        }
+        
+        .price span {
+            font-size: 1.5rem;
+            font-weight: normal;
+            color: var(--dark);
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            color: #9CA3AF;
+            font-size: 2rem;
+            margin-right: 10px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .original-price::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--secondary);
+            transform: rotate(-5deg);
+        }
+        
+        .pricing-cta {
+            margin: 40px 0;
+        }
+        
+        .bonuses {
+            text-align: left;
+            margin: 48px 0;
+            background: rgba(249, 250, 252, 0.8);
+            padding: 32px;
+            border-radius: 12px;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+        
+        .bonuses h4 {
+            font-size: 1.3rem;
+            color: var(--dark);
+            margin-bottom: 24px;
+            text-align: center;
+            position: relative;
+            font-weight: 700;
+        }
+        
+        .bonuses h4::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--secondary), var(--accent));
+            margin: 12px auto 0;
+            border-radius: 3px;
+        }
+        
+        .bonus-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed rgba(0,0,0,0.08);
+        }
+        
+        .bonus-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .bonus-icon {
+            color: var(--accent);
+            margin-right: 16px;
+            font-size: 1.5rem;
+            min-width: 24px;
+        }
+        
+        .bonus-content strong {
+            color: var(--dark);
+            font-weight: 600;
+        }
+        
+        .bonus-content p {
+            color: #4B5563;
+            font-size: 0.95rem;
+            margin-top: 4px;
+        }
+        
+        /* Guarantee */
+        .guarantee {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 60px;
+            border-radius: 16px;
+            max-width: 800px;
+            margin: 80px auto 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-primary);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .guarantee::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            animation: pulse 15s infinite alternate;
+            z-index: 1;
+        }
+        
+        .guarantee-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .guarantee h3 {
+            font-size: 2.2rem;
+            margin-bottom: 24px;
+            position: relative;
+            font-weight: 700;
+        }
+        
+        .guarantee h3 i {
+            margin-right: 12px;
+        }
+        
+        .guarantee p {
+            opacity: 0.9;
+            position: relative;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* FAQ */
+        .faq {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 24px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+        
+        .faq-item:hover {
+            box-shadow: var(--shadow-md);
+        }
+        
+        .faq-question {
+            background: var(--light);
+            padding: 24px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+        
+        .faq-question:hover {
+            background: rgba(79, 70, 229, 0.05);
+        }
+        
+        .faq-question i {
+            color: var(--primary);
+            transition: var(--transition);
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background: white;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 24px 24px;
+            max-height: 500px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--darker);
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+            position: relative;
+        }
+        
+        footer::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+        }
+        
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+            font-weight: 800;
+            display: inline-block;
+            background: linear-gradient(90deg, white 0%, rgba(255,255,255,0.8) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .footer-tagline {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+            opacity: 0.8;
+            font-size: 0.95rem;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+            opacity: 1;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin: 40px 0;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 1.2rem;
+            transition: var(--transition);
+            opacity: 0.7;
+        }
+        
+        .social-links a:hover {
+            color: var(--accent);
+            opacity: 1;
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            opacity: 0.6;
+            font-size: 0.9rem;
+            margin-top: 60px;
+        }
+        
+        /* Floating CTA */
+        .floating-cta {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+            animation: float-cta 3s ease-in-out infinite;
+        }
+        
+        @keyframes float-cta {
+            0% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(-10px); }
+            100% { transform: translateX(-50%) translateY(0); }
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .author-container {
+                flex-direction: column;
+                gap: 48px;
+                padding: 48px;
+            }
+            
+            .author-img-container {
+                min-width: auto;
+                width: 100%;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            
+            .author-img {
+                height: auto;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 100px 0 80px;
+            }
+            
+            h1 {
+                font-size: 2.8rem;
+            }
+            
+            .hero p {
+                font-size: 1.15rem;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+                margin-bottom: 60px;
+            }
+            
+            .pricing-card {
+                padding: 48px 32px;
+                width: 95%;
+            }
+            
+            .price {
+                font-size: 3.5rem;
+            }
+            
+            .original-price {
+                font-size: 1.5rem;
+            }
+            
+            .author-container {
+                padding: 40px 32px;
+            }
+            
+            .author-content h2 {
+                font-size: 2.2rem;
+            }
+            
+            .guarantee {
+                padding: 48px 32px;
+            }
+            
+            .guarantee h3 {
+                font-size: 1.8rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 24px;
+            }
+            
+            .hero {
+                padding: 80px 0 60px;
+            }
+            
+            .logo {
+                font-size: 2.2rem;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .cta-button {
+                padding: 18px 32px;
+                font-size: 1.1rem;
+                width: 100%;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-card {
+                padding: 40px 24px;
+            }
+            
+            .price {
+                font-size: 3rem;
+            }
+            
+            .author-container {
+                padding: 32px 24px;
+            }
+            
+            .author-content h2 {
+                font-size: 1.8rem;
+            }
+            
+            .author-badge {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+            
+            .guarantee {
+                padding: 40px 24px;
+            }
+            
+            .guarantee h3 {
+                font-size: 1.5rem;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="floating-element floating-1"></div>
+        <div class="floating-element floating-2"></div>
+        <div class="floating-element floating-3"></div>
+        
+        <div class="hero-content">
+            <div class="logo">Superando o TDAH</div>
+            <h1>Domine Seu Potencial Cerebral Com Métodos Científicos Comprovados</h1>
+            <p>O protocolo exclusivo que já transformou a vida de mais de 3.200 pessoas, ajudando-as a conquistar foco laser, produtividade extraordinária e equilíbrio emocional</p>
+            <a href="#offer" class="cta-button">
+                <span>QUERO MEU ACESSO VIP AGORA</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">O Que Você Vai Descobrir</h2>
+            <p class="section-subtitle">Um método completo desenvolvido a partir de pesquisas em neurociência das melhores universidades do mundo</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Neurohacks Exclusivos</h3>
+                    <p>Técnicas de regulação dopaminérgica baseadas em pesquisas de Harvard que aumentam o foco em até 300% em 30 dias.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                    <h3>Sistemas Anti-Procrastinação</h3>
+                    <p>Método "Time Blocking 2.0" adaptado para mentes aceleradas, com resultados comprovados em 92% dos usuários.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Hiperfoco Direcionado</h3>
+                    <p>Aprenda a ativar e controlar o estado de hiperfoco para realizar em 3 horas o que outros fazem em 3 dias.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-apple-alt"></i></div>
+                    <h3>Nutrição Cerebral</h3>
+                    <p>Protocolo alimentar com os 12 "superalimentos" que funcionam como moduladores naturais da atenção.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Controle Emocional</h3>
+                    <p>Técnica "PARE" desenvolvida pelo MIT para regular impulsividade em menos de 60 segundos.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Ferramentas Exclusivas</h3>
+                    <p>Acesso ao "Planner Neuroadaptável" digital que se ajusta ao seu padrão cerebral único.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Section -->
+    <section class="author-section">
+        <div class="container">
+            <div class="author-container">
+                <div class="author-img-container">
+                    <img src="https://i.ibb.co/N2LMJBxQ/Whats-App-Image-2024-09-24-at-16-13-15-1920w.png" alt="Dr. Rafael Menezes" class="author-img">
+                    <div class="author-badge">
+                        <i class="fas fa-certificate"></i>
+                        Especialista em Neurociência
+                    </div>
+                </div>
+                
+                <div class="author-content">
+                    <h2>Conheça o Autor</h2>
+                    <p><strong>Dr. Rafael Menezes</strong> é neurologista com especialização em neurociência cognitiva pela Universidade de Stanford. Com 15 anos de experiência clínica, desenvolveu o primeiro protocolo brasileiro de tratamento não-medicamentoso para TDAH em adultos.</p>
+                    <p>Seus estudos sobre regulação dopaminérgica foram publicados no <em>Journal of Attention Disorders</em> e apresentados no Congresso Mundial de Psiquiatria. Atualmente lidera pesquisas sobre neuroplasticidade e desempenho cognitivo no Instituto de Neurociências Aplicadas.</p>
+                    
+                    <div class="author-highlight">
+                        <p>"Meu propósito é provar que o TDAH não é um distúrbio, mas uma configuração cerebral diferente que, quando compreendida e direcionada, se torna uma vantagem competitiva extraordinária no mundo moderno."</p>
+                    </div>
+                    
+                    <div class="author-signature">Dr. Rafael Menezes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Transformações Reais</h2>
+            <p class="section-subtitle">Veja o que dizem aqueles que já aplicaram o método</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Depois de 15 anos tentando métodos convencionais, finalmente encontrei algo feito para o meu tipo de cérebro. Em 3 meses, minha produtividade no trabalho aumentou 400% e fui promovido a gerente de projetos."</p>
+                    <p class="testimonial-author">Carolina R., 34 anos, Diretora de Marketing</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"O capítulo sobre regulação emocional mudou minha vida conjugal. Pela primeira vez consigo controlar minhas reações impulsivas sem medicação. Minha esposa diz que sou uma pessoa diferente."</p>
+                    <p class="testimonial-author">Marcos T., 29 anos, Engenheiro de Software</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Como psicóloga, recomendo este material a todos meus clientes com TDAH. É o recurso mais completo e científico que já encontrei em língua portuguesa. Meus pacientes apresentam melhoras significativas em semanas."</p>
+                    <p class="testimonial-author">Dra. Ana L., 42 anos, Psicóloga Clínica</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="offer">
+        <div class="container">
+            <h2 class="section-title">Sua Jornada Começa Aqui</h2>
+            <p class="section-subtitle">Invista no seu potencial cerebral hoje e colha os benefícios para o resto da vida</p>
+            
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Edição VIP Limitada</h3>
+                    <p>Ebook Completo + Bônus Exclusivos + Acesso à Comunidade</p>
+                </div>
+                
+                <div class="price">
+                    <span class="original-price">R$297</span>
+                    R$97
+                    <span>à vista</span>
+                </div>
+                
+                <p>ou 12x de R$9,74 no cartão</p>
+                
+                <div class="pricing-cta">
+                    <a href="https://seu-link-secreto.com" class="cta-button" style="text-decoration: none;">
+                        <span>QUERO MINHA VAGA VIP</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="bonuses">
+                    <h4>Bônus Exclusivos Inclusos:</h4>
+                    
+                    <div class="bonus-item">
+                        <div class="bonus-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <div class="bonus-content">
+                            <strong>Planner Neuroadaptável</strong>
+                            <p>Sistema de organização que se ajusta ao seu padrão cerebral único (valor: R$97)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bonus-item">
+                        <div class="bonus-icon"><i class="fas fa-users"></i></div>
+                        <div class="bonus-content">
+                            <strong>Acesso à Comunidade VIP</strong>
+                            <p>Grupo exclusivo com mentorias mensais e suporte do Dr. Rafael (valor: R$197/ano)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bonus-item">
+                        <div class="bonus-icon"><i class="fas fa-video"></i></div>
+                        <div class="bonus-content">
+                            <strong>Workshop Online "Domando o Hiperfoco"</strong>
+                            <p>Treinamento avançado com técnicas para controle do estado de hiperfoco (valor: R$147)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="guarantee">
+                <div class="guarantee-content">
+                    <h3><i class="fas fa-shield-alt"></i> Garantia Incondicional de 7 Dias</h3>
+                    <p>Se em 7 dias você não perceber uma melhora significativa na sua capacidade de focar e organizar seus pensamentos, devolvemos 100% do seu investimento. Sem perguntas, sem burocracia. Você não tem absolutamente nada a perder.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quanto tempo leva para ver resultados?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A maioria dos nossos alunos relatam melhoras perceptíveis já nas primeiras 2 semanas de aplicação do método. No entanto, os resultados mais significativos geralmente aparecem após 30-60 dias de prática consistente.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>O método substitui o tratamento médico?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não. Nosso método é complementar e pode ser usado junto com o tratamento convencional. Recomendamos sempre a supervisão de um profissional de saúde. Muitos usuários conseguem reduzir a medicação com o tempo, mas isso deve ser feito apenas com acompanhamento médico.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Como recebo o acesso ao material?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Imediatamente após a confirmação do pagamento, você receberá um e-mail com acesso à área de membros, onde poderá baixar todos os materiais e terá acesso aos bônus. O processo é totalmente automatizado e você recebe o acesso em poucos minutos.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Posso compartilhar o material com familiares?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sua licença permite que você use o material para seu uso pessoal e pode compartilhar com membros da sua família que morem na mesma residência. No entanto, a distribuição para terceiros é proibida por termos de uso e leis de direitos autorais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">Superando o TDAH</div>
+            <p class="footer-tagline">Métodos Científicos para Desbloquear o Potencial Completo do Seu Cérebro</p>
+            
+            <div class="footer-links">
+                <a href="#">Termos de Uso</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Contato</a>
+                <a href="#">Dúvidas Frequentes</a>
+                <a href="#">Trabalhe Conosco</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            
+            <p class="copyright">© 2023 Superando o TDAH. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+        <a href="#offer" class="cta-button">
+            <span>QUERO MEU ACESSO VIP</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+
+    <script>
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
